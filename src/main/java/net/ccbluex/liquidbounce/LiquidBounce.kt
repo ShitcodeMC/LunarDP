@@ -50,7 +50,7 @@ object LiquidBounce {
     const val CLIENT_CREATOR = "CCBlueX & UnlegitMC"
     const val CLIENT_WEBSITE = "FDPClient.Club"
     const val MINECRAFT_VERSION = "1.8.9"
-    const val VERSIONTYPE = "Preview"
+    const val VERSIONTYPE = "Indev"
     @JvmField
     val gitInfo = Properties().also {
         val inputStream = LiquidBounce::class.java.classLoader.getResourceAsStream("git.properties")
@@ -66,7 +66,7 @@ object LiquidBounce {
     val CLIENT_VERSION = gitInfo["git.commit.id.abbrev"]?.let { "git-$it" } ?: "unknown"
     @JvmField
     val CLIENT_BRANCH = (gitInfo["git.branch"] ?: "unknown").let {
-        if(it == "main") "Main Reborn" else it
+        if(it == "main") "Dev Build" else it
     }
 
     var isStarting = true
