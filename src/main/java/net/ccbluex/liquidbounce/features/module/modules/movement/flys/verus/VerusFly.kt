@@ -14,7 +14,7 @@ import net.minecraft.network.play.client.C03PacketPlayer.C04PacketPlayerPosition
 import net.minecraft.util.AxisAlignedBB
 
 class VerusFly : FlyMode("VerusDamage") {
-    private val speedValue = FloatValue("${valuePrefix}Speed", 1.5f, 0f, 3f)
+    private val speedValue = FloatValue("${valuePrefix}Speed", 1.5f, 0f, 9.89f)
 
     private var flyable = false
     private val timer = MSTimer()
@@ -39,7 +39,7 @@ class VerusFly : FlyMode("VerusDamage") {
         if (flyable && timer.hasTimePassed(100)) {
             MovementUtils.strafe(speedValue.get())
         } else if (!timer.hasTimePassed(100)) {
-            MovementUtils.strafe(0)
+            MovementUtils.strafe(0f)
         }
     }
 
