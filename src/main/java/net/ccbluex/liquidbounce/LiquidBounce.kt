@@ -41,10 +41,10 @@ object LiquidBounce {
 
 
     // Client information
-    const val CLIENT_NAME = "FDPClient"
+    const val CLIENT_NAME = "LunarDP"
     @JvmStatic
-    var VERIFY = "Can't load FDPProtect, You can try restart client (Insecure Version)"
-    var CLIENTTEXT = "Waiting..."
+    var VERIFY = "Modified version of FDP Client."
+    var CLIENTTEXT = "Loading..."
     var Darkmode = true
     const val COLORED_NAME = "§c§lFDP§6§lClient"
     const val CLIENT_CREATOR = "CCBlueX & UnlegitMC"
