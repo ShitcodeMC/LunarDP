@@ -8,7 +8,7 @@ import net.ccbluex.liquidbounce.value.BoolValue
 import net.minecraft.block.BlockAir
 import net.minecraft.util.AxisAlignedBB
 
-class Verus3Fly : FlyMode("Verus3") {
+class Verus3Fly : FlyMode("VerusAirHop") {
 
     private val airStrafeValue = BoolValue("${valuePrefix}AirStrafe", true)
 
